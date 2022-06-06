@@ -5,56 +5,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
     <style>
-        section {
-            display: flex;
-            width: 71.6%;
-        }
-
-        .high-width {
-            background-color: black;
-            width: 20%;
+        td {
+            background-color: rgba(0, 0, 0, 0.37);
             height: 30px;
-            margin: 0.2%;
+            border-spacing: 5px;
         }
 
-        .min-width {
-            background-color: black;
-            width: 4%;
-            height: 30px;
-            margin: 0.2%;
-        }
-
-        .mid-width {
-            background-color: black;
-            width: 10%;
-            height: 30px;
-            margin: 0.2%;
-        }
-
-        .mid-width-height {
-            background-color: black;
-            width: 10%;
+        #fstcol {
             height: 60px;
-            margin: 0.2%;
         }
     </style>
-    <title>Qs Solve</title>
 </head>
 
 <body>
-    <section>
-        <div class="high-width"></div>
-        <div class="min-width"></div>
-        <div class="min-width"></div>
-        <div class="min-width"></div>
-        <div class="min-width"></div>
-        <div class="mid-width"></div>
-        <div class="mid-width-height"></div>
-        <div class="mid-width"></div>
-        <br>
+    <table style="width: 100%;">
+        <tr>
+            <td id="fstcol" colspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+            <td rowspan="3" colspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" rowspan="4"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" rowspan="4"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-    </section>
+    </table>
 </body>
 
 </html>
