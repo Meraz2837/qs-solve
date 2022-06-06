@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+   form{
+	     width: 500px;
+             border: 5px solid red;
+             padding: 20px;
+	}
+   .submit{
+	     display: flex;
+	     justify-content: center;
+	}
+</style>
+</head>
+<body>
+   <section>
+	
+	<form name="reg" action="" method= "post">
+		<h1 style="text-align: center;">Registration Form</h1>
+		<h1 style="color:red; text-align:center;" id="msg"></h1>
+		<label for="name">Name : </label>
+		<input type="text" id ="name" name="name"><br>
+		<label for="id">ID : </label>
+		<input type="text" id="id" name="id"><br>
+		<label for="password">Password : </label>
+		<input type="password" id="password" name="password"><br>
+		<p>Choose a language please</p>
+		<input type="radio" id="bangla" name="language" value="Bangla">
+		<label for="bangla">Bangla</label>
+                <input type="radio" id="english" name="language" value="English">
+                <label for="english">English</label>
+		<input type="radio" id="hindi" name="language" value="Hindi">
+		<label for="hindi">Hindi</label><br>
+
+		<p>Enter a car</p>
+		<input type="checkbox" id="lamborghini" name="lamborghini" value="Lamborghini">
+		<label for="lamborghini">Lamborghini</label>
+
+		<input type="checkbox" id="ferrari" name="ferrari" value="Ferrari">
+		<label for="ferrari">Ferrari</label>
+		
+		<div class="submit">
+			<input type="submit">
+		</div>
+	</form>
+
+	<script>
+		var form = document.forms['reg'];
+		var msg = document.querySelector('#msg');
+		form.onsubmit = function(event){
+		event.preventDefault();	
+		if(form['password'].value.length < 8){
+			msg.innerHTML = 'Length is less than 8';
+		}
+		else{ msg.innerHTML = 'Submitted Successfully!' }
+		}
+	</script>
+
+</body>
+</html>
